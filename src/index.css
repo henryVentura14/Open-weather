@@ -1,13 +1,134 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Material Icons';
+  font-style : normal;
+  font-weight: 400;
+  src        : url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src        : local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.material-icons {
+  font-family   : 'Material Icons';
+  font-weight   : normal;
+  font-style    : normal;
+  font-size     : 24px;
+  /* Preferred icon size */
+  display       : inline-block;
+  line-height   : 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap     : normal;
+  white-space   : nowrap;
+  direction     : ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering        : optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+body {
+  margin          : 0;
+  padding         : 0;
+  font-family     : sans-serif;
+  background-color: #4db6ac;
+}
+
+nav .brand-logo {
+  display   : block;
+  text-align: center;
+  position  : relative;
+}
+
+.input-field label {
+  color: white;
+}
+
+.input-field input[type=text]:focus+label {
+  color: white;
+}
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid white;
+  box-shadow   : 0 1px 0 0 #000;
+}
+
+input[type=text]:not(.browser-default), input[type=submit] {
+  border-bottom: 1px solid white;
+  color        : white;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+  border-bottom     : 1px solid white;
+  -webkit-box-shadow: 0 1px 0 0 white;
+  box-shadow        : 0 1px 0 0 white;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly])+label {
+  color: white;
+}
+
+.content-form {
+  padding         : 3rem 0 1px 0;
+  background-color: #4db6ac;
+}
+
+.message {
+  text-align: center;
+  font-size : 2rem;
+}
+
+.search i {
+  width: 100%;
+}
+
+.error {
+  padding      : 1rem !important;
+  color        : white;
+  margin-top   : 3rem;
+  text-align   : center;
+  text-emphasis: left;
+}
+
+.card-panel h2 {
+  font-size : 1.6rem;
+  text-align: center;
+}
+
+.card-panel p {
+  text-align: center;
+  font-size : 1.4rem;
+}
+
+.temp {
+  font-size: 4rem !important
+}
+
+.temp span {
+  font-size     : 2rem !important;
+  vertical-align: super;
+}
+
+.btn-block {
+  display: block !important;
+}
+
+.error {
+  padding   : 1rem !important;
+  text-align: center !important;
+  color     : #FFF !important;
+}
+.text-white{
+  color:#ffffff !important;
+  cursor: pointer;
 }
