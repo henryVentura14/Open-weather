@@ -60,7 +60,7 @@ const Form = ({ countries, search, saveSearch, saveFetchApiWeather }) => {
             <div className="input-field col s12">
                 <input
                     type="submit"
-                    defaultValue="Search weather"
+                    value="Search weather"
                     className="waves-effect waves-light btn-large btn-block text-white"
                 />
             </div>
